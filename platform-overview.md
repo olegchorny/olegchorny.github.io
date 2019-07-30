@@ -19,7 +19,7 @@ This article is designed to equip people with the key concepts to get started wi
 
 
 
-### Cloud computing services
+## Cloud computing services
 
 Cloud computing services provide a set of baseline services, which include compute, storage, networking, access management, and often database services.
 
@@ -30,7 +30,7 @@ OpenStack’s baseline services include:
 - Networking: OpenStack Networking (Neutron)
 - Identity and access management: OpenStack Identity Service (Keystone)
 
-### Sample architecture
+## Sample architecture
 
 This section describes how you might build a 3-tier web application system on OpenStack.
 
@@ -51,7 +51,7 @@ The sample OpenStack configuration shown in figure 1 has the following character
 
 ![](assets/images/openstack-1.svg)
 
-### Regions and Availability zone
+## Regions and Availability zone
 In OpenStack, a region can span multiple data centers and consists of availability zones. Availability zone is commonly used to identify a set of servers that have a common attribute
 
 |Entity   |Notes  |
@@ -61,19 +61,19 @@ In OpenStack, a region can span multiple data centers and consists of availabili
 
 Deploying your application across multiple regions can help protect against unexpected failures. Regions are considered independent failure domains, because availability zones in a single region share the same controller nodes. 
 
-### Tenants
+## Tenants
 
 Resources within a single tenant can work together easily, for example by communicating through an internal network. Resources in tenant are isolated from other tenants; you can only interconnect them through an external network connection.
 
 This model allows to create tenant for separate divisions or groups within the company. This model can also be useful for testing purposes: after you're done with a project, the tenant can be deleted. In OpenStack, only systems administrators can create new tenants.
 
-### Network configurations
+## Network configurations
 
 In a typical OpenStack Neutron deployment, each tenant’s virtual network is contained in its own private network space. As shown in figure 1, you don't necessarily have to use multiple subnets, but you can configure multiple subnets if you need to. Figure 3 shows an OpenStack virtual network that consists of a single virtual router and three virtual switches. Two of the virtual switches connect to the external network through the virtual router. AZ-1 and AZ-2 are availability zones.
 
 ![](assets/images/openstack-2.svg)
 
-### IP addresses
+## IP addresses
 
 In Neutron, VM instances in a private network communicate through virtual switches and routers using private IP addresses assigned at launch. Global IP addresses are not assigned by default.
 
@@ -83,7 +83,7 @@ Because the virtual network is contained in a single region, instances in differ
 
 A single network can include multiple virtual routers. VM instances connected to different routers can’t communicate directly with private IP addresses; however, they communicate through the external network using floating IP addresses.
 
-### Firewalls
+## Firewalls
 
 In OpenStack, a single security group contains multiple access control lists (ACLs), which are independent of VM instances. You assign a security group to a VM instance to apply the ACLs to the instance. Usually you define security groups according to VM instance roles, such as web server or database server.
 
@@ -117,7 +117,7 @@ After defining these security groups, you assign them to each instance as follow
 |Database server     |database         |
 
 
-### Storage
+## Storage
 
 OpenStack provides two options for instance-attached disks: ephemeral disks and Cinder volumes.
 
@@ -131,17 +131,17 @@ Application software running on the instance can also access the object storage 
 
 ![](assets/images/openstack-3.svg)
 
-### VM instances
+## VM instances
 
 When you launch a new VM instance in OpenStack, you choose an instance type to specify the instance size, such as the number of vCPUs and the amount of memory. If you have an appropriate access right assigned by the system administrator, you can define additional instance types. General users are not allowed to add custom instance types.
 
 OpenStack provides a metadata service to retrieve VM instance information from the instance guest operating system (guest OS), such as instance type, security groups, and assigned IP addresses. You can also add custom metadata in key-value form. OpenStack provides a type of metadata called user-data. You can specify an executable text file as user-data when you launch a new instance to have the cloud-init agent running in the guest OS execute startup configuration tasks according to its contents, such as installing application packages. You use the URL under http://169.254.169.254/latest/meta-data to access metadata from the guest OS.
 
-### Guest operating system agent
+## Guest operating system agent
 
 In OpenStack, the agent package called cloud-init is preinstalled in the standard guest OS images. It handles the initial configuration tasks at the first boot time, such as extending the root filesystem space, storing an SSH public key, and executing the script provided as user-data.
 
-### Access control
+## Access control
 
 OpenStack Keystone provides access control for service APIs based on user account, but does not provide instance-based access control for application APIs, such as read-write permission on object storage or database. You can implement custom access control for application APIs if necessary.
 

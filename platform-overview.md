@@ -11,11 +11,11 @@ nav_order: 2
 ## Table of contents
 {: .no_toc .text-delta }
 
-This article is designed to equip people with the key concepts to get started with OpenStack, whether you’re considering migrating or implementing a new deployment.
-
-
 1. TOC
 {:toc}
+
+
+This article is designed to equip people with the key concepts to get started with OpenStack, whether you’re considering migrating or implementing a new deployment.
 
 ### Cloud computing services
 
@@ -53,7 +53,7 @@ The sample OpenStack configuration shown in figure 1 has the following character
 In OpenStack, a region can span multiple data centers and consists of availability zones. Availability zone is commonly used to identify a set of servers that have a common attribute
 
 |Entity   |Notes  |
-|---------|---------|
+|:---------|:---------|
 |Region             |Defined as a single cluster that is managed by dedicated controller nodes.  |
 |Availability Zone  |Defines multiple groups of resources, such as compute nodes and storage enclosures.|
 
@@ -63,10 +63,7 @@ Deploying your application across multiple regions can help protect against unex
 
 Resources within a single tenant can work together easily, for example by communicating through an internal network. Resources in tenant are isolated from other tenants; you can only interconnect them through an external network connection.
 
-This model allows to create tenant for separate divisions or groups within the company. This model can also be useful for testing purposes: after you're done with a project, the tenant can be deleted. 
-
-> [!NOTE]
-> In OpenStack, only systems administrators can create new tenants.
+This model allows to create tenant for separate divisions or groups within the company. This model can also be useful for testing purposes: after you're done with a project, the tenant can be deleted. In OpenStack, only systems administrators can create new tenants.
 
 ### Network configurations
 
@@ -92,7 +89,7 @@ For example, for the sample architecture, you define the following security grou
 
 
 |Security Group  |Source  |Protocol  |
-|---------|---------|---------|
+|:---------|:---------|:---------|
 |load-balancer	     | any         | HTTP/HTTPS         |
 |     | Management Subnet	         |      SSH   |
 |web-server	     | load-balancer	         | HTTPS         |
@@ -111,7 +108,7 @@ After defining these security groups, you assign them to each instance as follow
 
 
 |Instance  | Security Group  |
-|---------|---------|
+|:---------|:---------|
 |Load Balancer     | load-balancer         |
 |Web server     | web-server         |
 |Application server     |web-application         |

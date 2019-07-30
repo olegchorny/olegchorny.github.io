@@ -1,10 +1,9 @@
 ---
 layout: default
 title: Utilities
-parent: Contribute
 nav_order: 4
 has_children: true
-permalink: /contribute/utilities
+permalink: docs/utilities
 ---
 
 # Utilities

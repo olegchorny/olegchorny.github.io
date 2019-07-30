@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Search
-parent: Contribute
 nav_order: 7
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Customization
-parent: Contribute
 nav_order: 6
 ---
 

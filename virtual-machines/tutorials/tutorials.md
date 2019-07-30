@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Quick Starts
+title: Tutorials
 has_children: true
 parent: Virtual Machines
 nav_order: 2

@@ -135,11 +135,11 @@ Application software running on the instance can also access the object storage 
 
 When you launch a new VM instance in OpenStack, you choose an instance type to specify the instance size, such as the number of vCPUs and the amount of memory. If you have an appropriate access right assigned by the system administrator, you can define additional instance types. General users are not allowed to add custom instance types.
 
-OpenStack provides a metadata service to retrieve VM instance information from the instance guest operating system (guest OS), such as instance type, security groups, and assigned IP addresses. You can also add custom metadata in key-value form. OpenStack provides a type of metadata called user-data. You can specify an executable text file as user-data when you launch a new instance to have the cloud-init agent running in the guest OS execute startup configuration tasks according to its contents, such as installing application packages. You use the URL under http://169.254.169.254/latest/meta-data to access metadata from the guest OS.
+OpenStack provides a metadata service to retrieve VM instance information from the instance guest operating system (guest OS), such as instance type, security groups, and assigned IP addresses. You can also add custom metadata in key-value form. OpenStack provides a type of metadata called `user-data`. You can specify an executable text file as `user-data` when you launch a new instance to have the `cloud-init` agent running in the guest OS execute startup configuration tasks according to its contents, such as installing application packages. You use the URL under `http://169.254.169.254/latest/meta-data` to access metadata from the guest OS.
 
 ## Guest operating system agent
 
-In OpenStack, the agent package called cloud-init is preinstalled in the standard guest OS images. It handles the initial configuration tasks at the first boot time, such as extending the root filesystem space, storing an SSH public key, and executing the script provided as user-data.
+In OpenStack, the agent package called `cloud-init` is preinstalled in the standard guest OS images. It handles the initial configuration tasks at the first boot time, such as extending the root filesystem space, storing an SSH public key, and executing the script provided as `user-data`.
 
 ## Access control
 

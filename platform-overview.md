@@ -9,7 +9,7 @@ nav_order: 2
 {: .no_toc }
 
 This article is designed to equip people with the key concepts to get started with OpenStack, whether you’re considering migrating or implementing a new deployment.
----
+
 
 ## Table of contents
 {: .no_toc .text-delta }

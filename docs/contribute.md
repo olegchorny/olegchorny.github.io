@@ -3,7 +3,7 @@ layout: default
 title: Contribute
 has_children: true
 permalink: /contribute
-nav_order: 2
+nav_order: 6
 ---
 
 # Focus on writing good documentation

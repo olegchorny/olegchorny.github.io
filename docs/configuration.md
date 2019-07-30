@@ -12,7 +12,6 @@ Just the Docs has some specific configuration parameters that can be defined in 
 {: .fs-6 .fw-300 }
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
 1. TOC

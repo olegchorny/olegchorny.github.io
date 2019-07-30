@@ -3,7 +3,7 @@ layout: default
 title: Kubernetes
 has_children: true
 permalink: /kubernetes
-nav_order: 2
+nav_order: 3
 ---
 
 # Kubernetes

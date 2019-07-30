@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Navigation Structure
+parent: Contribute
 nav_order: 5
 ---
 

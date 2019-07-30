@@ -1,3 +1,4 @@
+---
 layout: default
 title: Create Ubuntu VM
 parent: Quick Starts

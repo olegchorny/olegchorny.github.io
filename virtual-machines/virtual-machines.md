@@ -6,7 +6,7 @@ permalink: /virtual-machines
 nav_order: 2
 ---
 
-# Customization
+# Virtual Machines
 {: .no_toc }
 
 ## Table of contents

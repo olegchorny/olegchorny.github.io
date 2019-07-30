@@ -2,7 +2,7 @@
 layout: default
 title: Labels
 parent: UI Components
-grand_parent: Docs
+grand_parent: Contribute
 nav_order: 3
 ---
 

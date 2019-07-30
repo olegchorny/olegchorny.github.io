@@ -1,78 +1,86 @@
 ---
 layout: default
-title: Docs
+title: Contribute
 has_children: true
-permalink: /docs
+permalink: /contribute
 nav_order: 2
 ---
 
-# Search
-{: .no_toc }
+# Focus on writing good documentation
+{: .fs-9 }
 
-## Table of contents
-{: .no_toc .text-delta }
+Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+{: .fs-6 .fw-300 }
 
-1. TOC
-{:toc}
+[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-Just the Docs uses [lunr.js](http://lunrjs.com) to add a client-side search interface powered by a JSON index that Jekyll generates. All search results are shown in an auto-complete style interface (there is no search results page). By default, all generated HTML pages are indexed using the following data points:
+## Getting started
 
-- Page title
-- Page content
-- Page URL
+### Dependencies
 
-## Set up search
+Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages' standard Jekyll compiler.
 
-### Generate search index
+### Quick start: Use as a GitHub Pages remote theme
 
-Before you can use search, you must initialize the feature by running this `rake` command that comes with `just-the-docs`:
+1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
+```yaml
+remote_theme: pmarsceill/just-the-docs
+```
+<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
 
+### Local installation: Use the gem-based theme
+
+1. Install the Ruby Gem
+```bash
+$ gem install just-the-docs
+```
+```yaml
+# .. or add it to your your Jekyll site’s Gemfile
+gem "just-the-docs"
+```
+2. Add Just the Docs to your Jekyll site’s `_config.yml`
+```yaml
+theme: "just-the-docs"
+```
+3. _Optional:_ Initialize search data (creates `search-data.json`)
 ```bash
 $ bundle exec just-the-docs rake search:init
 ```
-
-This command creates the `search-data.json` file that Jekyll uses to create your search index. Alternatively, you can create the file manually in the `assets/js/` directory of your Jekyll site with this content:
-
-```liquid
-{% raw %}---
----
-{
-  {% for page in site.html_pages %}{% if page.search_exclude != true %}"{{ forloop.index0 }}": {
-    "id": "{{ forloop.index0 }}",
-    "title": "{{ page.title | replace: '&amp;', '&' }}",
-    "content": "{{ page.content | markdownify | strip_html | escape_once | remove: 'Table of contents' | remove: '```'  | remove: '---' | replace: '\', ' ' | normalize_whitespace }}",
-    "url": "{{ page.url | absolute_url }}",
-    "relUrl": "{{ page.url }}"
-  }{% unless forloop.last %},{% endunless %}
-  {% endif %}{% endfor %}
-}{% endraw %}
+3. Run you local Jekyll server
+```bash
+$ jekyll serve
 ```
-
-_Note: If you don't run this rake command or create this file manually, search will not work (or it will use the search index data from this docs site, not your site's content)._
-
-### Enable search in configuration
-
-In your site's `_config.yml`, enable search:
-
-```yaml
-# Enable or disable the site search
-search_enabled: true
+```bash
+# .. or if you're using a Gemfile (bundler)
+$ bundle exec jekyll serve
 ```
+4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
-## Hiding pages from search
+If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
-Sometimes you might have a page that you don't want to be indexed for the search nor to show up in search results, e.g, a 404 page. To exclude a page from search, add the `search_exclude: true` parameter to the page's YAML front matter:
+### Configure Just the Docs
 
-#### Example
-{: .no_toc }
+- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
 
-```yaml
 ---
-layout: default
-title: Page not found
-nav_exclude: true
-search_exclude: true
----
-```
+
+## About the project
+
+Just the Docs is &copy; 2017-2019 by [Patrick Marsceill](http://patrickmarsceill.com).
+
+### License
+
+Just the Docs is distributed by an [MIT license](https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt).
+
+### Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing).
+
+### Code of Conduct
+
+Just the Docs is committed to fostering a welcoming community.
+
+[View our Code of Conduct](https://github.com/pmarsceill/just-the-docs/tree/master/CODE_OF_CONDUCT.md) on our GitHub repository.

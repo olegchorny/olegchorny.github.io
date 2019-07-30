@@ -2,7 +2,7 @@
 layout: default
 title: Layout
 parent: Utilities
-grand_parent: Docs
+grand_parent: Contribute
 nav_order: 2
 ---
 

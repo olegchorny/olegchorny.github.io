@@ -2,7 +2,7 @@
 layout: default
 title: Responsive Modifiers
 parent: Utilities
-grand_parent: Docs
+grand_parent: Contribute
 nav_order: 1
 ---
 

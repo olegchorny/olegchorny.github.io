@@ -2,7 +2,7 @@
 layout: default
 title: Customization
 nav_order: 6
-parent: Docs
+parent: Contribute
 ---
 
 # Customization

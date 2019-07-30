@@ -2,7 +2,7 @@
 layout: default
 title: Markdown kitchen sink
 nav_order: 99
-parent: Docs
+parent: Contribute
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

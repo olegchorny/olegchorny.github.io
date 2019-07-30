@@ -5,13 +5,14 @@ has_children: false
 nav_order: 2
 ---
 
-# Platform overview
+# Platform Overview
 {: .no_toc }
-
-This article is designed to equip people with the key concepts to get started with OpenStack, whether you’re considering migrating or implementing a new deployment.
 
 ## Table of contents
 {: .no_toc .text-delta }
+
+This article is designed to equip people with the key concepts to get started with OpenStack, whether you’re considering migrating or implementing a new deployment.
+
 
 1. TOC
 {:toc}
@@ -47,3 +48,17 @@ The sample OpenStack configuration shown in figure 1 has the following character
 - This architecture provides an active-backup configuration. When you failover the service to another region, you restore the most recent backup to the database server in the backup region.
 
 ![](assets/images/openstack-1.svg)
+
+### Network architecture
+
+This section compares how OpenStack and GCP networks work within regions and zones, discusses projects and tenants, IP addresses and failover, and firewall rules.
+
+#### Regions and Availability zone
+In OpenStack, a region can span multiple data centers and consists of availability zones. Availability zone is commonly used to identify a set of servers that have a common attribute
+
+|Entity   |Notes  |
+|---------|---------|
+|Region             |Defined as a single cluster that is managed by dedicated controller nodes.  |
+|Availability Zone  |Defines multiple groups of resources, such as compute nodes and storage enclosures.|
+
+

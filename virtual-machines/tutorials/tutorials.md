@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tutorials
+title: Tutorials - VM
 has_children: true
 parent: Virtual Machines
 nav_order: 2

@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Create Kubernetes Cluster v1.14
-parent: Tutorials
+parent: Tutorials - Kubernetes
 grand_parent: Kubernetes
 nav_order: 2
 ---
 
-# Create Ubuntu VM
+# Create Kubernetes Cluster v1.14
 {: .no_toc }
 
 ## Table of contents

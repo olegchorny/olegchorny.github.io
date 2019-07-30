@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Create Kubernetes Cluster v1.14
-parent: Quick Starts
+parent: Quick Starts - Kubernetes
 grand_parent: Kubernetes
 nav_order: 3
 ---
 
-# Create Centos VM
+# Create Kubernetes Cluster v1.14
 {: .no_toc }
 
 ## Table of contents

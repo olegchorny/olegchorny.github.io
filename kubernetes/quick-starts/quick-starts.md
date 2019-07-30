@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Quick Starts
+title: Quick Starts - Kubernetes
 has_children: true
 parent: Kubernetes
 nav_order: 1

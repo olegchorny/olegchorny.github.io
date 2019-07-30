@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tutorials
+title: Tutorials - Kubernetes
 has_children: true
 parent: Kubernetes
 nav_order: 2

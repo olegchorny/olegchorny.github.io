@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Create Kubernetes Cluster v1.13
-parent: Quick Starts
+parent: Quick Starts - Kubernetes
 grand_parent: Kubernetes
 nav_order: 2
 ---
 
-# Create Ubuntu VM
+# Create Kubernetes Cluster v1.13
 {: .no_toc }
 
 ## Table of contents

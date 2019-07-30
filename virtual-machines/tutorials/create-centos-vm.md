@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Create CentOS VM
-parent: Tutorials
+parent: Tutorials - VM
 grand_parent: Virtual Machines
 nav_order: 3
 ---

@@ -2,6 +2,7 @@
 layout: default
 title: Typography
 parent: Utilities
+grand_parent: Docs
 nav_order: 4
 ---
 

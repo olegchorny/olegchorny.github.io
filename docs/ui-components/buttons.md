@@ -2,6 +2,7 @@
 layout: default
 title: Buttons
 parent: UI Components
+grand_parent: Docs
 nav_order: 2
 ---
 

@@ -3,7 +3,7 @@ layout: default
 title: Quick Starts
 has_children: true
 parent: Kubernetes
-nav_order: 1
+nav_order: 11
 permalink: /kubernetes/quick-starts
 ---
 

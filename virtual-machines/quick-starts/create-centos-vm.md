@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Create VM - CentOS
+title: Create CentOS VM
 parent: Quick Starts
 grand_parent: Virtual Machines
 nav_order: 3

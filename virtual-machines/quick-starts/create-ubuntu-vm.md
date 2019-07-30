@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Create VM - Ubuntu
+title: Create Ubuntu VM
 parent: Quick Starts
 grand_parent: Virtual Machines
 nav_order: 2

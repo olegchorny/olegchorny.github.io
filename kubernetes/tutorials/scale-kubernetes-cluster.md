@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Scale Kubernetes Cluster
-parent: Tutorials - Kubernetes
+parent: Tutorials
 grand_parent: Kubernetes
 nav_order: 3
 ---

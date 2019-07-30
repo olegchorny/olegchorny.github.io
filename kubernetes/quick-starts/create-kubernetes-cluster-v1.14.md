@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Create Kubernetes Cluster v1.14
+title: Create Kubernetes Cluster
 parent: Quick Starts - Kubernetes
 grand_parent: Kubernetes
-nav_order: 3
+nav_order: 2
 ---
 
 # Create Kubernetes Cluster v1.14

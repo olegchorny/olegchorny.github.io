@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Create Kubernetes Cluster v1.13
-parent: Quick Starts - Kubernetes
+title: Scale Kubernetes Cluster
+parent: Tutorials - Kubernetes
 grand_parent: Kubernetes
-nav_order: 2
+nav_order: 3
 ---
 
-# Create Kubernetes Cluster v1.13
+# Create Kubernetes Cluster v1.14
 {: .no_toc }
 
 ## Table of contents

@@ -4,7 +4,7 @@ title: Utilities
 parent: Contribute
 nav_order: 4
 has_children: true
-permalink: docs/contribute/utilities
+permalink: /contribute/utilities
 ---
 
 # Utilities

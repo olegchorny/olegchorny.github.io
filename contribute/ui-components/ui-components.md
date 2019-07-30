@@ -4,7 +4,7 @@ title: UI Components
 parent: Contribute
 nav_order: 3
 has_children: true
-permalink: /docs/contribute/ui-components
+permalink: /contribute/ui-components
 ---
 
 # UI Components

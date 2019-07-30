@@ -3,7 +3,7 @@ layout: default
 title: Contribute
 nav_order: 32
 has_children: true
-permalink: /docs/contribute
+permalink: /contribute
 ---
 
 # Contribute

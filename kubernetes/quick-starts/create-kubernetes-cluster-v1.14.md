@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Create Kubernetes Cluster
-parent: Quick Starts - Kubernetes
+parent: Quick Starts
 grand_parent: Kubernetes
 nav_order: 2
 ---

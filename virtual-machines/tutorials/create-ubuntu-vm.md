@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Create Ubuntu VM
-parent: Tutorials - VM
+parent: Tutorials
 grand_parent: Virtual Machines
 nav_order: 2
 ---

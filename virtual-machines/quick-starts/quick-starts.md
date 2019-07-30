@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Quick Starts - VM
+title: Quick Starts
 has_children: true
 parent: Virtual Machines
 nav_order: 1
+permalink: /virtual-machines/quick-start
 ---
 
 # Quick Starts

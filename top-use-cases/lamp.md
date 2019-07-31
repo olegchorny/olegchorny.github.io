@@ -24,10 +24,3 @@ This setup is for quick tests or proof of concept. For more on the LAMP stack, i
 ## Verify installation and configuration
 
 ## Install WordPress on the LAMP server
-
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}

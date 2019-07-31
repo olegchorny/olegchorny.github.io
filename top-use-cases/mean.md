@@ -8,7 +8,7 @@ nav_order: 3
 # Create a MongoDB, Express, AngularJS, and Node.js (MEAN) stack on a Linux virtual machine in OpenStack
 {: .no_toc }
 
-This tutorial shows you how to implement a MongoDB, Express, AngularJS, and Node.js (MEAN) stack on a Linux virtual machine (VM) in Azure. The MEAN stack that you create enables adding, deleting, and listing books in a database. You learn how to:
+This tutorial shows you how to implement a MongoDB, Express, AngularJS, and Node.js (MEAN) stack on a Linux virtual machine (VM) in OpenStack. The MEAN stack that you create enables adding, deleting, and listing books in a database. You learn how to:
 
 1. TOC
 {:toc}

@@ -8,7 +8,7 @@ nav_order: 2
 # Install a LAMP web server on a Linux virtual machine in OpenStack
 {: .no_toc }
 
-This article walks you through how to deploy an Apache web server, MySQL, and PHP (the LAMP stack) on an Ubuntu VM in OpenStack. If you prefer the NGINX web server, see the LEMP stack tutorial. To see the LAMP server in action, you can optionally install and configure a WordPress site. In this tutorial you learn how to:
+This article walks you through how to deploy an Apache web server, MySQL, and PHP (the LAMP stack) on an Ubuntu VM in OpenStack. If you prefer the NGINX web server, see the [LEMP stack](lemp.md) tutorial. To see the LAMP server in action, you can optionally install and configure a WordPress site. In this tutorial you learn how to:
 
 1. TOC
 {:toc}

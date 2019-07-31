@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Deploy a web app on managed Kubernetes
+parent: Top Use Cases
 nav_order: 1
 ---
 
